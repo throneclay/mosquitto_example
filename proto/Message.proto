@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package mesg;
+ 
+message Head {
+    required string name=1;
+}
+
+message Body {
+    repeated string context=1;
+}
+ 
+message Message {
+    optional int32 idx=1[default=-1];
+    required Head head=2;
+    required Body body=3;
+}
