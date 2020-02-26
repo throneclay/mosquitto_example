@@ -1,4 +1,4 @@
-# mosquitto c++ example
+# mosquitto c++ client example
 
 mosquitto client example using protobuf
 
