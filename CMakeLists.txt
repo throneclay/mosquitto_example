@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 2.8)
 PROJECT (mosquitto_example)
  
 # Find required protobuf package, if your find_package protobuf not work, try uncomment these codes
-set(protobuf_root "/home/zhangshuai/miniconda3/envs/pp_py36")
-set(Protobuf_INCLUDE_DIR "${protobuf_root}/include")
-set(Protobuf_LIBRARY "${protobuf_root}/lib/libprotobuf.so")
+#set(protobuf_root "/home/zhangshuai/miniconda3/envs/pp_py36")
+#set(Protobuf_INCLUDE_DIR "${protobuf_root}/include")
+#set(Protobuf_LIBRARY "${protobuf_root}/lib/libprotobuf.so")
 
 find_package(Protobuf REQUIRED)
 if(PROTOBUF_FOUND)
