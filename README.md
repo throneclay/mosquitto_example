@@ -2,9 +2,10 @@
 
 mosquitto client example using protobuf
 
-first launch scripts/get\_mosq\_lib.sh to get the source of mosquitto
+first launch scripts/get\_mosq\_lib.sh to get the source of mosquitto, it will compile the lib of mosquitto.
 ```
-scripts/get_mosq_lib.sh
+cd scripts
+./get_mosq_lib.sh
 ```
 
 then build the project.
@@ -15,3 +16,5 @@ cd build
 cmake ..
 make 
 ```
+
+If the protobuf not found. vim CMakeLists.txt and modify the protobuf root path
